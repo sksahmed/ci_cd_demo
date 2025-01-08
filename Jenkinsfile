@@ -15,9 +15,11 @@ pipeline {
                 sh "docker build -t smarok/project:${BUILD_NUMBER} ."
                 sh 'docker images'
 
-                sh "docker push smarok/project:${BUILD_NUMBER}"
+                //sh "docker push smarok/project:${BUILD_NUMBER}"
 
                 sh 'docker rmi -f $(docker images -q)'
+                echo 'Docker Process Stop'
+                
             }
         }
     }
