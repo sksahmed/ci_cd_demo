@@ -25,7 +25,7 @@ pipeline {
                 //sh "docker push smarok/project:${BUILD_NUMBER}"
 
                 sh 'docker rmi -f $(docker images -q)'
-                echo 'Docker Process Stop'
+                echo 'Docker Process Stop!!!'
                 
             }
         }
