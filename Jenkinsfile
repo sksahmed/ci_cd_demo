@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Hello') {
             steps {
-                echo 'Hello World---'
+                echo 'Hello World'
                 git branch: 'main', url: 'https://github.com/sksahmed/ci_cd_demo.git'
             }
         }
